@@ -1,0 +1,254 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(0, 0, 0);
+}
+header {
+    height:70px;
+    cursor: pointer;
+}
+header h1 {
+    display: inline-block;
+    padding: 15px 24px;
+    text-transform: uppercase;
+}
+header h1 a {
+    transition: .3s;
+}
+header h1 a:hover {
+    color:#000000;
+}
+header ul {
+    float:right ;
+}
+ header ul li { 
+     padding:24px;
+     display: inline-block;
+ }
+ header ul li a {
+     transition: .3s;
+ }
+ header ul li a:hover {
+     color:rgba(0, 68, 255, 0.719);
+ }
+ a {
+     text-decoration: none;
+ }
+ .container {
+     width:90%;
+     margin:0 auto;
+ }
+ .container::after {
+     content: '';
+     display:block;
+     clear:both;
+ }
+ .mobile-menu {
+     float: right;
+     display: none;
+     padding:18px;
+ }
+  .mobile-menu:hover {
+      cursor:pointer;
+  }
+#sidebar {
+    position: fixed;
+    top: 0;
+    left:-170px;
+    width: 170px;
+    height: 100vh;
+    background-color:rgba(16, 47, 80, .9);
+    transition: 0.5s;
+    z-index: 9999;
+   }
+#sidebar.active {
+    left:0px;
+
+}
+   
+#sidebar ul {
+    position: relative;
+    margin-top: 50px;
+}
+#sidebar ul li {
+    list-style: none;
+    display: inline-block;
+    widows: 100%;
+    padding: 10px 40px;
+}
+#sidebar ul li:hover {
+    background: #03a9f4;
+}
+#sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+    
+}
+
+
+#toggle {
+    position: fixed;
+    top:14px;
+    right:20px;
+    width: 40px;
+    height: 40px;
+    background: #03a9f4;
+    cursor: pointer;
+    display:none;
+    justify-content: center;
+    align-items: center;
+
+}
+#toggle::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transform: translateY(-5px);
+    transition: 0.2s;
+}
+#toggle::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    transform: translateY(5px);
+    transition: 0.2s;
+}
+#toggle.active::before {
+    transform: translateY(0px) rotate(45deg);
+}
+#toggle.active::after {
+    transform: translateY(0px) rotate(-45deg);
+}
+  .banner {
+      background-color:#eee;
+  }
+  section {
+      padding:50px 0;
+  }
+  .banner img {
+      width: 100px;
+      border-radius: 10px;
+      box-shadow: 0 3px 5px rgb(0, 0, 0);
+      margin-bottom: 10px;
+  }
+  .banner-left {
+      padding-left:25px;
+  }
+  .banner h2,
+  .banner p {
+      color: rgb(0, 0, 0);
+  }
+  .banner h2 {
+      margin-bottom: 5 px;
+  }
+
+  section h3 {
+      padding-bottom: 20px;
+      text-align: center;
+      margin:20px;
+      position: relative;
+  }
+  section h3::before {
+      content:'';
+      display:block;
+      position: absolute;
+      bottom:0;
+      width:120px;
+      height:1px;
+      background-color: #ddd;
+      left: calc(50% - 60px) ;
+  }
+  section h3::after {
+    content:'';
+    display:block;
+    position: absolute;
+    bottom:0;
+    width:40px;
+    height:4px;
+    background-color: rgba(0, 68, 255, 0.719);
+    left: calc(50% - 20px) ;
+  }
+  #about p {
+      text-align: justify;
+      text-indent: 30px;
+      line-height: 25px;
+      margin-bottom: 15px;
+  }
+  #skills {
+      background-color: #eeeeee;
+  }
+  #skills .bar {
+      height:30px;
+      background-color: #fff;
+      border:1px solid #ddd;
+      margin: 5px 0 20px 0;
+  }
+  .bar .nilai {
+      height:30px;
+      background-color:rgba(0, 68, 255, 0.719);
+      display: inline-block; 
+      color:#fff;
+      text-align: center ;
+  }
+  .html {
+      width: 80%;
+  }
+  .css {
+      width: 85%;
+  }
+  .js {
+      width: 95%;
+  }
+  .php {
+      width:85%;
+  }
+  .figma {
+      width:90%;
+  }
+  .xd {
+      width: 70%;
+  }
+
+   .col-3 {
+       width: 33.33%;
+       box-sizing: border-box;
+       float: left;
+       text-align: center;
+       padding:50px 10px;
+   }
+    .col-3 h4 {
+        padding-bottom: 10px;
+        border-bottom:1px solid #ddd;
+        margin-bottom: 15px;
+    }
+    footer {
+        background-color: #333;
+        padding: 20px;
+        text-align: center;
+    }
+    footer small {
+        color: white;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+   
+ 
+   @media (max-width: 768px){
+       #toggle {
+           display: flex;
+       }
+      header ul {
+          display: none;
+      }
+      .col-3 {
+          width:100%;
+      }
+  }

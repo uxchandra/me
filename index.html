@@ -1,0 +1,165 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Chandra Aditya</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ </head>
+ <body>
+      <!--sidebar-->
+      <div id="toggle"></div>
+      <div id="sidebar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <script>
+        const toggle = document.getElementById('toggle');
+        const sidebar = document.getElementById('sidebar');
+
+        document.onclick = function(e){
+            if(e.target.id !== 'sidebar' && e.target.id !== 'toggle')
+            {
+                toggle.classList.remove('active');
+                sidebar.classList.remove('active');
+            }
+        }
+
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+       
+
+
+    <!--bagian header-->
+    <header>
+     <div class="container">
+     <h1><a href="">chandra</a></h1>
+         <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+    </div>
+    </header>
+    
+    <!-- bagian banner-->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-left">
+                <img src="img/chanz.jpg">
+                <h2>Hello...<br>
+                    Im a <span class="efek-ngetik"></span></h2>
+            </div>
+        </div>
+    </section> 
+  
+    <!--bagian about-->
+    <section id="about">
+       <div class="container">
+           <h3>About</h3>
+           <palign="justify">Hey</align>
+           <br>
+           <palign="justify">I'm a Webflow Developer. Specializing in Webflow Development, UI UX design, responsive design, and pixel perfect design.</palign></p>
+           <br>
+           <palign="justify">I believe that all successful partnerships are built on trust and clear communication. That’s why I always make sure that we have a chance to chat before we decide to work together, to see if we are a great fit. I will improve your project, by applying the best practices, strategy, and user experience solutions to your webflow website.</palign></p>
+           <br>
+           <palign="justify">👋 I am always happy to help, provide reliable and high-level solutions to design challenges that you have with your landing page design. Please feel free to chat with me, so we can discuss how you can leverage my skills to up-level your business!</palign></p>
+           <br>
+           <palign="justify">I can help you with:</palign>
+           <br>
+           <palign="justify">* HTML + CSS + Javascript</palign>
+           <br>
+           <palign="justify">* Website design</palign>
+           <br>
+           <palign="justify">* Landing page design</palign>
+           <br>
+           <palign="justify">* UX/UI Design</palign>
+           <br>
+           <palign="justify">* Funnel design</palign>
+           <br>
+           <palign="justify">* User Experience</palign></p>
+           <br>
+           <palign="justify">Tools I use:</palign>
+           <br>
+           <palign="justify">Webflow, Figma, Adobe XD, Photoshop, WordPress, Elementor Pro</palign>
+        </div>    
+    </section>
+
+    <!--bagian skills-->
+    <section id="skills">
+        <div class="container">
+            <h3>Skills</h3>
+            <h4>HTML</h4>
+            <div class="bar">
+                <span class="nilai html">80%</span>
+            </div>
+
+            <h4>CSS</h4>
+            <div class="bar">
+                <span class="nilai css">85%</span>
+            </div>
+
+            <h4>JavaScript</h4>
+            <div class="bar">
+                <span class="nilai js">95%</span>
+            </div>
+
+            <h4>Photoshop</h4>
+            <div class="bar">
+                <span class="nilai php">85%</span>
+            </div>
+
+            <h4>Figma</h4>
+            <div class="bar">
+                <span class="nilai figma">90%</span>
+            </div>
+
+            <h4>Adobe XD</h4>
+            <div class="bar">
+                <span class="nilai xd  ">75%</span>
+            </div>
+        </div>
+    </section>
+
+
+    <!--bagian contact-->
+    <section id="contact">
+        <div class="container">
+           <h3>Contact</h3> 
+           <div class="col-3">
+                <h4>Address</h4>
+                <p>Kudus, Jawa Tengah, Indonesia </p>
+           </div>
+
+           <div class="col-3">
+            <h4>Email</h4>
+            <p>rahmaann01@gmail.com</p>
+            </div> 
+
+             <div class="col-3">
+             <h4>Telp/Hp</h4>
+             <p>+62 858 7831 4732</p>
+            </div>
+        </div>
+    </section>
+
+    <!--bagian footer-->
+    <footer>
+        <div class="container">
+            <small>Copyright &copy; 2022 - Chandra Aditya.</small>
+        </div>
+    </footer>
+
+   
+    <script src="js/script.js"></script>
+ </body>
+ </html> 
